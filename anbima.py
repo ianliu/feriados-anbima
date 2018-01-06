@@ -17,10 +17,13 @@ def holidays(url=None, path=None):
     dates = []
     while ws.cell_type(i, 0) == 3:
         y, m, d, _, _, _ = xlrd.xldate_as_tuple(ws.cell_value(i, 0), wb.datemode)
-        dates.append(date(y, m, d))
+        yield date(y, m, d)
+        #dates.append(date(y, m, d))
         i += 1
-    return dates
+    #return dates
 
 
 if __name__ == '__main__':
-    print(holidays())
+    for day in holidays():
+        print(day)
+
