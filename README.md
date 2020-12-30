@@ -2,6 +2,13 @@
 
 Módulo em Python que facilita o uso do [python-bizdays](https://github.com/wilsonfreitas/python-bizdays) para feriados Brasileiros.
 
+## Instalando dependências
+
+```sh
+cd [project_dir]
+pip install -r requirements.txt
+```
+
 ## Uso
 
 ```python
